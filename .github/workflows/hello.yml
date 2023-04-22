@@ -1,0 +1,12 @@
+name: CI/CD
+
+on:
+  push:
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name : Echoes some words
+        run : echo Hello World!
